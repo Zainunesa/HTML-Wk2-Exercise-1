@@ -1,0 +1,76 @@
+body {
+    background: linear-gradient(135deg, #f0f4f7, #c0e4fc); 
+    justify-content: center;
+    margin: 0;
+    height: 100%;
+}
+
+.header {
+    text-align: center;
+    background-color: rgb(58, 154, 206);
+    color: white;
+}
+
+h1 {
+    color: rgb(9, 158, 199);
+}
+/* Submit Button */
+button {
+    background-color: #4CAF50;    
+    color: white;              
+    padding: 10px 20px;            
+    border: 20px;                  
+    border-radius: 5px;            
+    cursor: pointer;               
+    font-size: 16px;  
+    transition: background-color 0.3s;             
+   }
+
+   button:hover{
+    background-color: #2b9b38;
+   }
+
+
+.card1, .card2, .card3, .card4, .card5, .card6 {
+    align-items: center;
+    background-color: white;
+    margin: 20px;
+    width: 350px;
+    padding: 15px;
+    border: 5px solid white; 
+    border-radius: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    gap: 10px;                
+}
+
+.content {
+    display: grid;   
+    grid-template-columns: repeat(3, 1fr);             
+    flex-wrap: wrap;  
+    flex-direction: row;           
+    justify-content: center; 
+    padding: 20px;
+    margin: auto;
+}
+
+.card1 img, .card2 img, .card3 img, .card4 img, .card5 img, .card6 img{
+    margin: auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);    
+}
+}
+
+@media (max-width: 480px) {
+    .content{
+        grid-template-columns: repeat(1, 1fr);       
+    }
+}
+
+
+
+
